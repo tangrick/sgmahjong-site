@@ -1,71 +1,393 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SG Mahjong · 新加坡麻將 for iPhone and iPad</title>
-  <meta name="description" content="Singapore-style Mahjong for iPhone and iPad: play three smart computer opponents, friends on the same Wi‑Fi, or Game Center friends online, with animals, flowers, 台 scoring, table chat, ranks and a Hall of Fame.">
+  <meta name="description" content="Singapore-style Mahjong for iPhone and iPad. Play bots that get sharper as you rank up, friends on the same Wi‑Fi, or Game Center friends online. Animals, flowers, 台 scoring, Mandarin calls, career ranks and a Hall of Fame. Points only: no ads, no purchases.">
+  <meta name="theme-color" content="#04190f">
+  <meta property="og:title" content="SG Mahjong · 新加坡麻將">
+  <meta property="og:description" content="Singapore-style Mahjong for iPhone and iPad. Coming soon to the App Store.">
+  <meta property="og:image" content="https://sgmahjong.tangrick.com/assets/og-image.jpg">
+  <meta property="og:type" content="website">
   <link rel="icon" href="/img/icon.png">
   <link rel="apple-touch-icon" href="/img/icon.png">
   <link rel="stylesheet" href="/style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="/assets/site.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <div class="wrap">
     <header class="top">
-      <a class="brand" href="/"><img src="/img/icon.png" alt="">SG Mahjong</a>
-      <nav>
+      <a class="brand" href="/"><img src="/img/icon.png" alt=""><span>SG Mahjong</span></a>
+      <nav aria-label="Main">
+        <a class="hide-sm" href="#rules">Rules</a>
+        <a class="hide-sm" href="#play">Play</a>
+        <a class="hide-sm" href="#leaderboard">Leaderboard</a>
         <a href="/support/">Support</a>
-        <a href="/privacy/">Privacy</a>
-        <a href="/terms/">Terms</a>
+        <a class="pill" href="#get">Get the app</a>
       </nav>
     </header>
+  </div>
 
-    <section class="hero">
-      <img class="icon" src="/img/icon.png" alt="SG Mahjong app icon">
-      <h1>新加坡麻將</h1>
-      <div class="sub">SINGAPORE MAHJONG FOR iPHONE AND iPAD</div>
-      <p class="lead">The Singapore table game you grew up with: animals that bite, flowers, tai and the full scoring rules, on a real-looking table with Mandarin calls.</p>
-      <span class="badge soon">Coming soon to the App Store</span>
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="flourish" aria-hidden="true">
+        <div class="ft" data-depth="-0.25" style="left:3%;top:12%"><span class="tile r deal" style="--w:64px;--r:-14deg;--fx:40vw;--fy:30vh;--dd:.15s">中</span></div>
+        <div class="ft" data-depth="-0.45" style="left:44%;top:4%"><span class="tile g deal" style="--w:50px;--r:12deg;--d:-2s;--fx:0;--fy:40vh;--dd:.25s">發</span></div>
+        <div class="ft opt" data-depth="-0.15" style="right:3%;top:8%"><span class="tile wd deal" style="--w:58px;--r:18deg;--d:-4s;--fx:-30vw;--fy:30vh;--dd:.35s"></span></div>
+        <div class="ft keep-sm" data-depth="-0.35" style="right:6%;bottom:6%"><span class="tile deal" style="--w:60px;--r:-10deg;--d:-1s;--fx:-30vw;--fy:-20vh;--dd:.45s">北</span></div>
+        <div class="ft opt" data-depth="-0.55" style="left:8%;bottom:4%"><span class="tile back deal" style="--w:46px;--r:22deg;--d:-3s;--fx:30vw;--fy:-20vh;--dd:.55s"></span></div>
+        <div class="ft keep-sm" data-depth="-0.2" style="left:30%;bottom:2%"><span class="tile deal" style="--w:42px;--r:-24deg;--d:-5s;--fx:0;--fy:-30vh;--dd:.65s">東</span></div>
+      </div>
+
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow rise" style="--dd:.05s">For iPhone and iPad</span>
+            <h1 id="hero-title" lang="zh-Hant" aria-label="新加坡麻將, Singapore Mahjong"><span class="ch rise" style="--dd:.1s">新</span><span class="ch rise" style="--dd:.17s">加</span><span class="ch rise" style="--dd:.24s">坡</span><span class="ch rise" style="--dd:.31s">麻</span><span class="ch rise" style="--dd:.38s">將</span></h1>
+            <div class="sub rise" style="--dd:.45s" aria-hidden="true">SINGAPORE MAHJONG</div>
+            <p class="lead rise" style="--dd:.55s">The Singapore table you grew up with: animals that bite, flowers, 台 and the full scoring rules, on a table that looks and sounds real.</p>
+            <div class="actions rise" style="--dd:.65s">
+              <a class="btn primary" href="#rules">See how it plays <span aria-hidden="true">↓</span></a>
+              <span class="status"><span class="dot" aria-hidden="true"></span>Version 1.1 is in App Review</span>
+            </div>
+            <ul class="facts rise" style="--dd:.75s">
+              <li>Points only, no cash value</li>
+              <li>No ads, no purchases</li>
+              <li>Landscape on iPhone and iPad</li>
+            </ul>
+          </div>
+
+          <div class="stage" id="stage">
+            <div class="glow" aria-hidden="true"></div>
+            <div class="ipad-wrap deal" style="--fx:10vw;--fy:0;--fr:0deg;--dd:.2s">
+              <div class="device ipad">
+                <img src="/assets/shots/ipad-04-kong-800.webp" srcset="/assets/shots/ipad-04-kong-800.webp 800w, /assets/shots/ipad-04-kong.webp 1400w" sizes="(min-width: 980px) 52vw, 90vw" width="1400" height="1050" alt="SG Mahjong on iPad: Mei Ling calls 明杠, a kong of four red dragon tiles, for +3 points" fetchpriority="high">
+              </div>
+            </div>
+            <div class="iphone-wrap deal" style="--fx:-10vw;--fy:10vh;--fr:0deg;--dd:.45s">
+              <div class="device iphone">
+                <img src="/assets/shots/iphone-02-table-800.webp" srcset="/assets/shots/iphone-02-table-800.webp 800w, /assets/shots/iphone-02-table.webp 1600w" sizes="(min-width: 980px) 38vw, 60vw" width="1600" height="736" alt="SG Mahjong on iPhone: a hand in progress against Uncle Kopi, Mei Ling and Ah Huat, with discards in the middle of the table">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#rules" aria-label="Scroll to the rules"><span></span>Scroll</a>
     </section>
 
-    <section class="shots" id="screenshots">
-      <img src="/img/home.jpg" alt="The SG Mahjong front page: Single Player, Play with Friends and Learn from Bots, with your rank and career points" loading="lazy">
-      <img src="/img/table.jpg" alt="A Singapore Mahjong hand in progress, with discards in the middle and each player's melds and flowers" loading="lazy">
-      <img src="/img/win.jpg" alt="A win result showing the winning hand, its 台 breakdown and each player's points" loading="lazy">
-      <img src="/img/bots.jpg" alt="Learn from Bots: four computer players on a red table, with the bot's reasoning for its discard" loading="lazy">
+    <!-- ============ CALL TICKER ============ -->
+    <div class="ticker" aria-label="Table calls read out in Mandarin">
+      <div class="track">
+        <div class="call"><strong lang="zh">碰</strong><em>Pong</em></div>
+        <div class="call"><span class="tile r" aria-hidden="true">中</span></div>
+        <div class="call"><strong lang="zh">吃</strong><em>Chow</em></div>
+        <div class="call"><span class="tile g" aria-hidden="true">發</span></div>
+        <div class="call"><strong lang="zh">杠</strong><em>Kong</em></div>
+        <div class="call"><span class="tile wd" aria-hidden="true"></span></div>
+        <div class="call"><strong lang="zh">咬到</strong><em>Animal bite</em></div>
+        <div class="call"><span class="tile" aria-hidden="true">東</span></div>
+        <div class="call"><strong lang="zh">自摸</strong><em>Self-drawn</em></div>
+        <div class="call"><span class="tile" aria-hidden="true">南</span></div>
+        <div class="call"><strong lang="zh">胡</strong><em>Win</em></div>
+        <div class="call"><span class="tile" aria-hidden="true">西</span></div>
+        <div aria-hidden="true" style="display:contents">
+          <div class="call"><strong>碰</strong><em>Pong</em></div>
+          <div class="call"><span class="tile r">中</span></div>
+          <div class="call"><strong>吃</strong><em>Chow</em></div>
+          <div class="call"><span class="tile g">發</span></div>
+          <div class="call"><strong>杠</strong><em>Kong</em></div>
+          <div class="call"><span class="tile wd"></span></div>
+          <div class="call"><strong>咬到</strong><em>Animal bite</em></div>
+          <div class="call"><span class="tile">東</span></div>
+          <div class="call"><strong>自摸</strong><em>Self-drawn</em></div>
+          <div class="call"><span class="tile">南</span></div>
+          <div class="call"><strong>胡</strong><em>Win</em></div>
+          <div class="call"><span class="tile">西</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ RULES STORY ============ -->
+    <section class="block" id="rules" aria-labelledby="rules-title">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="eyebrow">Real Singapore rules</span>
+          <h2 id="rules-title">Every tile, every bite, every <span class="zh">台</span></h2>
+          <p>148 tiles with flowers, seasons and the four animals. Bonus points land the moment they happen, and every win shows exactly how its 台 add up.</p>
+        </div>
+
+        <div class="story">
+          <div class="story-steps">
+            <article class="story-step active" data-step="0">
+              <span class="num">01 · THE TABLE</span>
+              <h3>A table that feels like the real thing</h3>
+              <p>Ivory tiles slide in from the wall, flip face up and land in the middle with a click. Three computer players sit with you, each with their own face and style.</p>
+              <div class="chips"><span class="chip"><b>148</b> tiles</span><span class="chip"><b>4</b> seats</span><span class="chip">東 南 西 北 rounds</span></div>
+              <div class="inline-shot device iphone"><img src="/assets/shots/iphone-02-table-800.webp" width="800" height="368" loading="lazy" alt="A hand in progress on iPhone"></div>
+            </article>
+            <article class="story-step" data-step="1">
+              <span class="num">02 · ANIMALS</span>
+              <h3>Animals that bite <span class="zh" lang="zh">咬到</span></h3>
+              <p>Cat catches rat, rooster catches centipede. Draw the matching animal or flower set and everyone pays you on the spot.</p>
+              <div class="chips"><span class="chip">貓 Cat</span><span class="chip">鼠 Rat</span><span class="chip">雞 Rooster</span><span class="chip">蜈蚣 Centipede</span></div>
+              <div class="inline-shot device iphone"><img src="/assets/shots/iphone-03-animal-bonus-800.webp" width="800" height="368" loading="lazy" alt="Uncle Kopi gets a flower bite, 咬到, for +3 points"></div>
+            </article>
+            <article class="story-step" data-step="2">
+              <span class="num">03 · CLAIMS</span>
+              <h3>Pong, chow and kong, called out loud</h3>
+              <p>Claim a discard with one tap. Kongs pay instantly, and 碰, 吃, 杠 and 胡 are read out in Mandarin, just like at the table.</p>
+              <div class="chips"><span class="chip"><b>碰</b> Pong</span><span class="chip"><b>吃</b> Chow</span><span class="chip"><b>杠</b> Kong</span></div>
+              <div class="inline-shot device ipad"><img src="/assets/shots/ipad-04-kong-800.webp" width="800" height="600" loading="lazy" alt="A 明杠 kong of four red dragons on iPad"></div>
+            </article>
+            <article class="story-step" data-step="3">
+              <span class="num">04 · SCORING</span>
+              <h3>Every 台, explained</h3>
+              <p>From dragon pongs and 平胡 to 十三幺, each win shows its 台 line by line and what every player gains or pays. Pick your own 台 limit in Settings.</p>
+              <div class="chips"><span class="chip">1 台 = 1 pt</span><span class="chip">5 台 = 16 pts</span><span class="chip">House rules</span></div>
+              <div class="inline-shot device iphone"><img src="/assets/shots/iphone-04-win-result-800.webp" width="800" height="368" loading="lazy" alt="A win result: Ah Huat's 2 台 hand with its breakdown and each player's points"></div>
+            </article>
+          </div>
+
+          <div class="story-stage" aria-hidden="true">
+            <div class="screen active" data-screen="0"><div class="device iphone"><img src="/assets/shots/iphone-02-table.webp" width="1600" height="736" alt="" loading="lazy"></div></div>
+            <div class="screen" data-screen="1"><div class="device iphone"><img src="/assets/shots/iphone-03-animal-bonus.webp" width="1600" height="736" alt="" loading="lazy"></div></div>
+            <div class="screen" data-screen="2"><div class="device ipad"><img src="/assets/shots/ipad-04-kong.webp" width="1400" height="1050" alt="" loading="lazy"></div></div>
+            <div class="screen" data-screen="3"><div class="device iphone"><img src="/assets/shots/iphone-04-win-result.webp" width="1600" height="736" alt="" loading="lazy"></div></div>
+            <div class="story-progress"><span class="tile on">一</span><span class="tile">二</span><span class="tile">三</span><span class="tile">四</span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="features">
-      <div class="feature">
-        <h3>Real Singapore rules</h3>
-        <p>148 tiles with cat, rat, rooster and centipede. Instant bonus points for 咬到, kongs and flower sets. Tai from dragon pongs to 十三幺, with your choice of tai limit.</p>
-      </div>
-      <div class="feature">
-        <h3>Three ways to play</h3>
-        <p>Take on three computer players, host a table for up to four iPhones and iPads on the same Wi‑Fi, or invite your Game Center friends to an online table from anywhere. Empty seats are filled by bots.</p>
-      </div>
-      <div class="feature">
-        <h3>Chat at the table</h3>
-        <p>Send quick table talk like "Wah, so lucky!" or "快点啦!", or type your own short line. Offensive words are filtered, and you can mute anyone with one tap.</p>
-      </div>
-      <div class="feature">
-        <h3>Bots that get smarter</h3>
-        <p>Climb from 新手 Rookie to 雀聖 Mahjong Master. The higher you rank, the sharper the computer players get. Stuck on a hand? Tap Ask AI and Bot Brain tells you what it would play and why, or watch four bots play and learn from their reasoning.</p>
-      </div>
-      <div class="feature">
-        <h3>Big wins, remembered</h3>
-        <p>Every hand worth 5 台 or more is saved. See your Game Center friends' ranks and big wins, share your best to the public Hall of Fame and compete on the Career Points and Top Rank leaderboards.</p>
-      </div>
-      <div class="feature">
-        <h3>Looks and sounds like a real table</h3>
-        <p>3D ivory tiles that slide, flip and land like the real thing, a choice of table themes, and 碰, 吃, 杠, 胡 and the tai count read out in Mandarin.</p>
-      </div>
-      <div class="feature">
-        <h3>No ads, no purchases</h3>
-        <p>Every hand is scored in 台 and points, like any board game. There are no in-app purchases or ads.</p>
+    <!-- ============ MODES ============ -->
+    <section class="block" id="play" aria-labelledby="play-title">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="eyebrow">Three ways to play</span>
+          <h2 id="play-title">Fill the table, <span class="zh">一起玩</span></h2>
+          <p>Play solo, sit around the same Wi‑Fi, or invite friends from anywhere. Empty seats are always filled by bots.</p>
+        </div>
+        <div class="modes">
+          <article class="mode single reveal" data-zh="單" style="--dd:0s">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0 2c-4.4 0-8 2.2-8 5v2h16v-2c0-2.8-3.6-5-8-5Z"/></svg></div>
+            <h3>Single Player</h3>
+            <p class="tag">You vs 3 computer players</p>
+            <p>Bots that get sharper as you climb the ranks, from friendly to ruthless.</p>
+            <ul><li>Ask AI for a hint on your turn</li><li>Every win counts toward your Career</li></ul>
+          </article>
+          <article class="mode lan reveal" data-zh="網" style="--dd:.12s">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 18.5a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6ZM12 13c2 0 3.8.8 5.1 2.1l-1.6 1.6A5 5 0 0 0 12 15.3a5 5 0 0 0-3.5 1.4l-1.6-1.6A7.2 7.2 0 0 1 12 13Zm0-4.6c3.3 0 6.3 1.3 8.4 3.5l-1.6 1.6A9.5 9.5 0 0 0 12 10.6a9.5 9.5 0 0 0-6.8 2.9l-1.6-1.6A11.8 11.8 0 0 1 12 8.4Zm0-4.6c4.6 0 8.7 1.8 11.7 4.8l-1.6 1.6A14.2 14.2 0 0 0 12 6.1 14.2 14.2 0 0 0 1.9 10.2L.3 8.6C3.3 5.6 7.4 3.8 12 3.8Z"/></svg></div>
+            <h3>Local Network</h3>
+            <p class="tag">Same Wi‑Fi, up to four players</p>
+            <p>One iPhone or iPad hosts and the others join. Mix iPhones and iPads at one table.</p>
+            <ul><li>Final scores and places at the end</li><li>Every game saved in History</li></ul>
+          </article>
+          <article class="mode online reveal" data-zh="友" style="--dd:.24s">
+            <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-3a15.7 15.7 0 0 0-1.4-3.9A8 8 0 0 1 18.9 8ZM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4ZM4.3 14a8.2 8.2 0 0 1 0-4h3.4a16.5 16.5 0 0 0 0 4H4.3Zm.8 2h3a15.7 15.7 0 0 0 1.4 3.9A8 8 0 0 1 5.1 16ZM8.1 8h-3a8 8 0 0 1 4.4-3.9C8.9 5.3 8.4 6.6 8.1 8ZM12 20c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4Zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4Zm.2 5.9c.6-1.2 1.1-2.5 1.4-3.9h3a8 8 0 0 1-4.4 3.9Zm1.8-5.9a16.5 16.5 0 0 0 0-4h3.4a8.2 8.2 0 0 1 0 4h-3.4Z"/></svg></div>
+            <h3>Online</h3>
+            <p class="tag">Game Center friends, anywhere</p>
+            <p>Invite your Game Center friends to a private table over the internet.</p>
+            <ul><li>Friends only, never strangers</li><li>Quick table chat, with mute</li></ul>
+          </article>
+        </div>
       </div>
     </section>
 
+    <!-- ============ CAREER ============ -->
+    <section class="block" id="career" aria-labelledby="career-title">
+      <div class="wrap split">
+        <div class="reveal from-left">
+          <span class="eyebrow">Career</span>
+          <h2 id="career-title">Climb from <span class="zh">新手</span> to <span class="zh">雀聖</span></h2>
+          <p>Every hand earns or costs career points and League Points (LP). Fill five stars to move up a rank. The higher you go, the smarter the bots get. Your career syncs through iCloud across your iPhone and iPad.</p>
+          <p class="fine">Points are for fun and bragging rights only. They have no cash value and can't be bought.</p>
+        </div>
+        <div class="reveal from-right">
+          <div class="ladder" role="list" aria-label="Ranks, lowest to highest">
+            <div class="rung" role="listitem" style="--i:0"><span class="zh" lang="zh">新手</span><span class="en">Rookie</span></div>
+            <div class="rung" role="listitem" style="--i:1"><span class="zh" lang="zh">銅</span><span class="en">Bronze</span></div>
+            <div class="rung" role="listitem" style="--i:2"><span class="zh" lang="zh">銀</span><span class="en">Silver</span></div>
+            <div class="rung" role="listitem" style="--i:3"><span class="zh" lang="zh">金</span><span class="en">Gold</span></div>
+            <div class="rung" role="listitem" style="--i:4"><span class="zh" lang="zh">玉</span><span class="en">Jade</span></div>
+            <div class="rung" role="listitem" style="--i:5"><span class="zh" lang="zh">龍</span><span class="en">Dragon</span></div>
+            <div class="rung" role="listitem" style="--i:6"><span class="zh" lang="zh">雀聖</span><span class="en">Master</span></div>
+          </div>
+          <div class="lp" aria-hidden="true">
+            <div class="bar"><div class="fill"></div></div>
+            <div class="meta"><span>銅 Bronze <span class="stars">★★★★☆</span></span><span>Next star</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEADERBOARD ============ -->
+    <section class="block" id="leaderboard" aria-labelledby="lb-title">
+      <div class="wrap split flip">
+        <div class="reveal from-right">
+          <span class="eyebrow">New in 1.1</span>
+          <h2 id="lb-title">One Leaderboard, three ways to show off</h2>
+          <ul class="points">
+            <li><span class="tile r" aria-hidden="true">一</span><div><strong>Leaderboard</strong>Career points and rank from Game Center, for everyone or just your friends, with photos.</div></li>
+            <li><span class="tile g" aria-hidden="true">二</span><div><strong>Hall of Fame</strong>Share a big hand of 5 台 or more to the public gallery and browse the best hands from other players.</div></li>
+            <li><span class="tile" aria-hidden="true">三</span><div><strong>My Big Wins</strong>Every hand worth 5 台 or more is saved, so you can look back at the tiles and the 台.</div></li>
+          </ul>
+        </div>
+        <div class="reveal zoom">
+          <div class="lb" id="lb">
+            <div class="tabs" role="tablist" aria-label="Leaderboard screen preview">
+              <span class="thumb" aria-hidden="true"></span>
+              <button role="tab" id="t-lb" aria-controls="p-lb" aria-selected="true">Leaderboard</button>
+              <button role="tab" id="t-hof" aria-controls="p-hof" aria-selected="false" tabindex="-1">Hall of Fame</button>
+              <button role="tab" id="t-me" aria-controls="p-me" aria-selected="false" tabindex="-1">My Big Wins</button>
+            </div>
+            <div class="panel show" role="tabpanel" id="p-lb" aria-labelledby="t-lb">
+              <div class="seg" aria-hidden="true"><span class="on">Career Points</span><span>Rank</span></div>
+              <div class="seg" aria-hidden="true" style="margin-left:6px"><span class="on">Everyone</span><span>Friends</span></div>
+              <div class="row"><span class="pos">1</span><span class="av" style="--a:#b3221c">MT</span><span class="who"><b>MasterTan</b><small>雀聖 Mahjong Master</small></span><span class="pts">18,420</span></div>
+              <div class="row"><span class="pos">2</span><span class="av" style="--a:#5a2f9e">JL</span><span class="who"><b>JadeLily</b><small>玉 Jade ★★★</small></span><span class="pts">9,915</span></div>
+              <div class="row"><span class="pos">3</span><span class="av" style="--a:#234a9a">KB</span><span class="who"><b>KopiBoy</b><small>金 Gold ★★★★</small></span><span class="pts">6,302</span></div>
+              <div class="row me"><span class="pos">27</span><span class="av" style="--a:#d9a443;color:#1b1407">P</span><span class="who"><b>You</b><small>銅 Bronze ★★★★★</small></span><span class="pts">2,480</span></div>
+            </div>
+            <div class="panel" role="tabpanel" id="p-hof" aria-labelledby="t-hof" hidden>
+              <div class="hand"><div class="top"><b>大三元 Big Three Dragons</b><span class="tai">Limit</span></div><div class="tiles" aria-hidden="true"><span class="tile r">中</span><span class="tile r">中</span><span class="tile r">中</span><span class="tile g">發</span><span class="tile g">發</span><span class="tile g">發</span><span class="tile wd"></span><span class="tile wd"></span><span class="tile wd"></span><span class="tile">東</span><span class="tile">東</span></div><small>Shared by JadeLily</small></div>
+              <div class="hand"><div class="top"><b>十三幺 Thirteen Wonders</b><span class="tai">Limit</span></div><div class="tiles" aria-hidden="true"><span class="tile">東</span><span class="tile">南</span><span class="tile">西</span><span class="tile">北</span><span class="tile r">中</span><span class="tile g">發</span><span class="tile wd"></span><span class="tile two">一<b>萬</b></span><span class="tile two">九<b>萬</b></span></div><small>Shared by MasterTan</small></div>
+            </div>
+            <div class="panel" role="tabpanel" id="p-me" aria-labelledby="t-me" hidden>
+              <div class="hand"><div class="top"><b>對對胡 All Pongs</b><span class="tai">5 台</span></div><div class="tiles" aria-hidden="true"><span class="tile two">三<b>萬</b></span><span class="tile two">三<b>萬</b></span><span class="tile two">三<b>萬</b></span><span class="tile r">中</span><span class="tile r">中</span><span class="tile r">中</span><span class="tile">北</span><span class="tile">北</span><span class="tile">北</span></div><small>Saved 2 Nov · Share to Hall of Fame</small></div>
+              <div class="hand"><div class="top"><b>混一色 Half Flush</b><span class="tai">5 台</span></div><div class="tiles" aria-hidden="true"><span class="tile two">一<b>萬</b></span><span class="tile two">二<b>萬</b></span><span class="tile two">三<b>萬</b></span><span class="tile two">七<b>萬</b></span><span class="tile two">七<b>萬</b></span><span class="tile two">七<b>萬</b></span><span class="tile">西</span><span class="tile">西</span></div><small>Saved 28 Oct</small></div>
+            </div>
+            <p class="caption">Illustration of the Leaderboard screen. Names and scores are examples.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEARN FROM BOTS ============ -->
+    <section class="block" id="bots" aria-labelledby="bots-title">
+      <div class="wrap split">
+        <div class="reveal from-left">
+          <span class="eyebrow">Learn from Bots</span>
+          <h2 id="bots-title">Stuck on a hand? <span class="zh">問一下</span></h2>
+          <p>Tap <strong>Ask AI</strong> on your turn and Bot Brain tells you what it would discard and why. Or sit back and watch four bots play a whole game, with every move explained.</p>
+          <ul class="points">
+            <li><span class="tile r" aria-hidden="true">中</span><div><strong>Bot vs Bots</strong>Watch the table and read each bot's reasoning.</div></li>
+            <li><span class="tile g" aria-hidden="true">發</span><div><strong>How to Play and All Tiles</strong>A full guide to claiming, 台, limit hands and every one of the 148 tiles.</div></li>
+          </ul>
+        </div>
+        <div class="reveal from-right" data-depth-wrap>
+          <div class="device iphone" data-depth="0.06"><img src="/assets/shots/iphone-05-learn-from-bots-800.webp" srcset="/assets/shots/iphone-05-learn-from-bots-800.webp 800w, /assets/shots/iphone-05-learn-from-bots.webp 1600w" sizes="(min-width: 940px) 50vw, 92vw" width="1600" height="736" loading="lazy" alt="Learn from Bots on iPhone: Bot Brain A and B play on a red table"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DETAILS ============ -->
+    <section class="block" id="details" aria-labelledby="details-title">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="eyebrow">The little things</span>
+          <h2 id="details-title">Made with <span class="zh">心</span></h2>
+        </div>
+        <div class="bento">
+          <article class="card b-wide reveal">
+            <h3>Mandarin table calls, with voice</h3>
+            <p>Hear 碰, 吃, 杠, 胡 and the 台 count read out as the hand plays, with music you can switch off.</p>
+            <div class="visual voice" aria-hidden="true">
+              <span class="bubble" lang="zh">碰!</span><span class="bubble" lang="zh" style="--d:-1s">杠!</span><span class="bubble" lang="zh" style="--d:-2s">胡!</span>
+              <span class="wave"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i></span>
+            </div>
+          </article>
+          <article class="card b-third reveal" style="--dd:.1s">
+            <h3>Smooth tile animations</h3>
+            <p>Tiles fly out of the spot you tap and slide neatly into place.</p>
+            <div class="visual slide-row" aria-hidden="true"><span class="tile" style="--i:0">東</span><span class="tile r" style="--i:1">中</span><span class="tile g" style="--i:2">發</span></div>
+          </article>
+          <article class="card b-third reveal">
+            <h3>Table chat</h3>
+            <p>Quick phrases or a short line of your own. Offensive words are filtered and anyone can be muted.</p>
+            <div class="visual chat" aria-hidden="true"><span>Wah, so lucky!</span><span lang="zh">快点啦!</span></div>
+          </article>
+          <article class="card b-third reveal" style="--dd:.1s">
+            <h3>Your table, your rules</h3>
+            <p>Choose your 台 limit and other house rules in Settings.</p>
+            <div class="visual" aria-hidden="true"><span class="chip">台 limit <b>5</b></span> <span class="chip">1 pt / 台</span></div>
+          </article>
+          <article class="card b-third reveal" style="--dd:.2s">
+            <h3>No ads. No purchases.</h3>
+            <p>Every hand is scored in 台 and points, like any board game.</p>
+            <div class="visual nope" aria-hidden="true"><span>Ads</span><span>In-app purchases</span><span>Tracking</span></div>
+          </article>
+          <article class="card b-wide reveal">
+            <h3>How to Play and All Tiles</h3>
+            <p>New to the Singapore table? The built-in guide covers tiles, claiming, 台, limit hands, scoring and ranks.</p>
+            <div class="shot-peek"><div class="device iphone"><img src="/assets/shots/iphone-06-all-tiles-800.webp" width="800" height="368" loading="lazy" alt="The All Tiles guide listing dots and bamboo tiles with their names"></div></div>
+          </article>
+          <article class="card b-third reveal" style="--dd:.1s" data-count-card>
+            <h3>By the numbers</h3>
+            <div class="visual" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+              <div><b class="gold-text" style="font-size:40px;font-weight:900" data-count="148">148</b><br><small style="color:var(--muted)">tiles in the set</small></div>
+              <div><b class="gold-text" style="font-size:40px;font-weight:900" data-count="7">7</b><br><small style="color:var(--muted)">ranks to climb</small></div>
+              <div><b class="gold-text" style="font-size:40px;font-weight:900" data-count="4">4</b><br><small style="color:var(--muted)">animals that bite</small></div>
+              <div><b class="gold-text" style="font-size:40px;font-weight:900">5+ 台</b><br><small style="color:var(--muted)">for the Hall of Fame</small></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="block" id="screenshots" aria-labelledby="shots-title" style="padding-bottom:60px">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="eyebrow">Screenshots</span>
+          <h2 id="shots-title">Made for iPhone and iPad</h2>
+          <p>Played in landscape on both, with layouts tuned to each screen.</p>
+        </div>
+        <div class="gallery-tabs" role="group" aria-label="Choose device">
+          <button type="button" aria-pressed="true" data-rail="phones">iPhone</button>
+          <button type="button" aria-pressed="false" data-rail="pads">iPad</button>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="rail phones" id="rail-phones" tabindex="0" aria-label="iPhone screenshots">
+          <figure><div class="device iphone"><img src="/assets/shots/iphone-01-home-800.webp" srcset="/assets/shots/iphone-01-home-800.webp 800w, /assets/shots/iphone-01-home.webp 1600w" sizes="78vw" width="1600" height="736" loading="lazy" alt="Front page with Single Player, Play with Friends and Learn from Bots, plus your rank and career points"></div><figcaption>Front page</figcaption></figure>
+          <figure><div class="device iphone"><img src="/assets/shots/iphone-02-table-800.webp" srcset="/assets/shots/iphone-02-table-800.webp 800w, /assets/shots/iphone-02-table.webp 1600w" sizes="78vw" width="1600" height="736" loading="lazy" alt="A hand in progress"></div><figcaption>At the table</figcaption></figure>
+          <figure><div class="device iphone"><img src="/assets/shots/iphone-03-animal-bonus-800.webp" srcset="/assets/shots/iphone-03-animal-bonus-800.webp 800w, /assets/shots/iphone-03-animal-bonus.webp 1600w" sizes="78vw" width="1600" height="736" loading="lazy" alt="A flower bite bonus, 咬到"></div><figcaption>咬到 bonus</figcaption></figure>
+          <figure><div class="device iphone"><img src="/assets/shots/iphone-04-win-result-800.webp" srcset="/assets/shots/iphone-04-win-result-800.webp 800w, /assets/shots/iphone-04-win-result.webp 1600w" sizes="78vw" width="1600" height="736" loading="lazy" alt="Win result with the 台 breakdown"></div><figcaption>台 breakdown</figcaption></figure>
+          <figure><div class="device iphone"><img src="/assets/shots/iphone-05-learn-from-bots-800.webp" srcset="/assets/shots/iphone-05-learn-from-bots-800.webp 800w, /assets/shots/iphone-05-learn-from-bots.webp 1600w" sizes="78vw" width="1600" height="736" loading="lazy" alt="Learn from Bots"></div><figcaption>Learn from Bots</figcaption></figure>
+          <figure><div class="device iphone"><img src="/assets/shots/iphone-06-all-tiles-800.webp" srcset="/assets/shots/iphone-06-all-tiles-800.webp 800w, /assets/shots/iphone-06-all-tiles.webp 1600w" sizes="78vw" width="1600" height="736" loading="lazy" alt="All Tiles guide"></div><figcaption>All Tiles</figcaption></figure>
+        </div>
+        <div class="rail pads" id="rail-pads" tabindex="0" aria-label="iPad screenshots" hidden>
+          <figure><div class="device ipad"><img src="/assets/shots/ipad-01-home-800.webp" srcset="/assets/shots/ipad-01-home-800.webp 800w, /assets/shots/ipad-01-home.webp 1400w" sizes="78vw" width="1400" height="1050" loading="lazy" alt="Front page on iPad"></div><figcaption>Front page</figcaption></figure>
+          <figure><div class="device ipad"><img src="/assets/shots/ipad-02-table-800.webp" srcset="/assets/shots/ipad-02-table-800.webp 800w, /assets/shots/ipad-02-table.webp 1400w" sizes="78vw" width="1400" height="1050" loading="lazy" alt="A hand in progress on iPad"></div><figcaption>At the table</figcaption></figure>
+          <figure><div class="device ipad"><img src="/assets/shots/ipad-03-claim-800.webp" srcset="/assets/shots/ipad-03-claim-800.webp 800w, /assets/shots/ipad-03-claim.webp 1400w" sizes="78vw" width="1400" height="1050" loading="lazy" alt="Claim buttons for chow or pass, with Ask AI"></div><figcaption>Claim a discard</figcaption></figure>
+          <figure><div class="device ipad"><img src="/assets/shots/ipad-04-kong-800.webp" srcset="/assets/shots/ipad-04-kong-800.webp 800w, /assets/shots/ipad-04-kong.webp 1400w" sizes="78vw" width="1400" height="1050" loading="lazy" alt="A 明杠 kong"></div><figcaption>明杠 Kong</figcaption></figure>
+          <figure><div class="device ipad"><img src="/assets/shots/ipad-05-win-result-800.webp" srcset="/assets/shots/ipad-05-win-result-800.webp 800w, /assets/shots/ipad-05-win-result.webp 1400w" sizes="78vw" width="1400" height="1050" loading="lazy" alt="Win result on iPad"></div><figcaption>Win result</figcaption></figure>
+          <figure><div class="device ipad"><img src="/assets/shots/ipad-06-learn-from-bots-800.webp" srcset="/assets/shots/ipad-06-learn-from-bots-800.webp 800w, /assets/shots/ipad-06-learn-from-bots.webp 1400w" sizes="78vw" width="1400" height="1050" loading="lazy" alt="Learn from Bots on iPad"></div><figcaption>Learn from Bots</figcaption></figure>
+          <figure><div class="device ipad"><img src="/assets/shots/ipad-07-all-tiles-800.webp" srcset="/assets/shots/ipad-07-all-tiles-800.webp 800w, /assets/shots/ipad-07-all-tiles.webp 1400w" sizes="78vw" width="1400" height="1050" loading="lazy" alt="All Tiles on iPad"></div><figcaption>All Tiles</figcaption></figure>
+        </div>
+        <div class="rail-nav"><button type="button" data-dir="-1" aria-label="Previous screenshot">←</button><button type="button" data-dir="1" aria-label="Next screenshot">→</button></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" id="get" aria-labelledby="get-title">
+      <div class="wrap">
+        <div class="hand-fan reveal" aria-hidden="true">
+          <span class="tile" style="--i:0">東</span><span class="tile" style="--i:1">南</span><span class="tile" style="--i:2">西</span><span class="tile" style="--i:3">北</span><span class="tile r" style="--i:4">中</span><span class="tile g" style="--i:5">發</span><span class="tile wd" style="--i:6"></span>
+        </div>
+        <h2 id="get-title" class="gold-text reveal" lang="zh">一起打麻將</h2>
+        <p class="reveal">SG Mahjong is coming soon to the App Store for iPhone and iPad. Version 1.1 is in App Review now.</p>
+        <div class="reveal"><span class="status"><span class="dot" aria-hidden="true"></span>Coming soon to the App Store</span></div>
+        <p class="fine reveal" style="margin-top:22px">Points only, with no cash value. No ads, no in-app purchases.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="wrap">
     <footer class="bottom">
       <span>© 2026 Yew Huat Tang · Voices: Microsoft Azure TTS · Music: Suno</span>
       <span><a href="/support/">Support</a> · <a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms of Use</a></span>

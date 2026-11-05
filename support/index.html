@@ -1,89 +1,130 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support · SG Mahjong</title>
+  <meta name="description" content="Help with SG Mahjong for iPhone and iPad: rules, ranks and career points, playing with friends on Wi‑Fi or online, the Leaderboard, Hall of Fame and contact details.">
+  <meta name="theme-color" content="#04190f">
   <link rel="icon" href="/img/icon.png">
+  <link rel="apple-touch-icon" href="/img/icon.png">
   <link rel="stylesheet" href="/style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="/assets/site.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <div class="wrap">
     <header class="top">
-      <a class="brand" href="/"><img src="/img/icon.png" alt="">SG Mahjong</a>
-      <nav>
+      <a class="brand" href="/"><img src="/img/icon.png" alt=""><span>SG Mahjong</span></a>
+      <nav aria-label="Main">
+        <a class="hide-sm" href="/">Home</a>
         <a href="/support/" aria-current="page">Support</a>
         <a href="/privacy/">Privacy</a>
         <a href="/terms/">Terms</a>
       </nav>
     </header>
 
-    <main class="doc">
-      <h1>Support</h1>
-      <p class="updated">Questions, bug reports or feedback: <a href="mailto:richardtang@me.com?subject=SG%20Mahjong%20support">richardtang@me.com</a>. We usually reply within 2 days.</p>
+    <main id="main">
+      <section class="s-hero">
+        <div class="flourish" aria-hidden="true">
+          <div class="ft opt" data-depth="-0.3" style="left:2%;top:20%"><span class="tile r deal" style="--w:52px;--r:-12deg;--fx:20vw;--dd:.1s">中</span></div>
+          <div class="ft opt" data-depth="-0.2" style="right:3%;top:12%"><span class="tile g deal" style="--w:46px;--r:14deg;--d:-3s;--fx:-20vw;--dd:.25s">發</span></div>
+          <div class="ft opt" data-depth="-0.4" style="right:12%;bottom:-10%"><span class="tile wd deal" style="--w:40px;--r:-20deg;--d:-5s;--fx:-10vw;--dd:.4s"></span></div>
+        </div>
+        <span class="eyebrow rise">Support</span>
+        <h1 class="rise" style="--dd:.08s">How can we <span class="gold-text">help</span>?</h1>
+        <p class="rise" style="--dd:.16s">Answers for SG Mahjong on iPhone and iPad. Can't find it? <a href="#contact">Email us</a> and we usually reply within 2 days.</p>
+        <div class="search rise" style="--dd:.24s" role="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2Zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"/></svg>
+          <label for="faq-search" class="sr-only">Search the help pages</label>
+          <input id="faq-search" type="search" placeholder="Search: LAN, ranks, Hall of Fame…" autocomplete="off">
+          <p id="faq-status" class="sr-only" role="status" aria-live="polite"></p>
+        </div>
+      </section>
 
-      <h2>Playing</h2>
-      <h3>How do I discard?</h3>
-      <p>On your turn, tap a tile to lift it, then tap it again to discard. Drag tiles left or right to arrange your hand.</p>
-      <h3>Where are the rules?</h3>
-      <p>Tap <strong>How to Play</strong> on the front page. It covers tiles, claiming, tai, limit hands, scoring, ranks and the Hall of Fame. You can change the tai limit and other house rules in <strong>Settings</strong>.</p>
-      <h3>Is money involved?</h3>
-      <p>No. Hands are scored in points, which have no cash value. There are no in-app purchases.</p>
+      <nav class="quick" aria-label="Popular topics">
+        <a class="reveal" href="#playing"><span class="tile r" aria-hidden="true">中</span><b>Playing</b><small>Discarding, rules and 台</small></a>
+        <a class="reveal" style="--dd:.08s" href="#ranks"><span class="tile" aria-hidden="true">東</span><b>Ranks and points</b><small>LP, stars and iCloud sync</small></a>
+        <a class="reveal" style="--dd:.16s" href="#friends"><span class="tile g" aria-hidden="true">發</span><b>Play with friends</b><small>Local Network and Online</small></a>
+        <a class="reveal" style="--dd:.24s" href="#leaderboard"><span class="tile wd" aria-hidden="true"></span><b>Leaderboard</b><small>Hall of Fame and big wins</small></a>
+      </nav>
 
-      <h2>Ranks and career points</h2>
-      <h3>How do ranks work?</h3>
-      <p>Winning earns League Points (LP) and paying costs a little. Fill five stars to move up a rank, from 新手 Rookie to 雀聖 Mahjong Master. Your rank always follows your total LP, so losing enough LP drops you back a star or a rank. Computer players get smarter as you climb.</p>
-      <h3>My career points are negative. Can I reset them?</h3>
-      <p>No. Career points only change by winning or losing hands. That keeps the leaderboard fair. You can always keep playing below zero.</p>
-      <h3>My iPhone and iPad show different points</h3>
-      <p>Your career points and rank sync through iCloud, and the device you played on most recently wins. Make sure both are signed in to the same Apple ID with iCloud turned on, then open the app on the device you played on last and wait a few seconds on the front page before opening it on the other.</p>
+      <div class="faq-layout">
+        <nav class="faq-nav" aria-label="Help sections">
+          <a href="#playing">Playing</a>
+          <a href="#ranks">Ranks and points</a>
+          <a href="#friends">Play with friends</a>
+          <a href="#chat">Chat and profile</a>
+          <a href="#leaderboard">Leaderboard</a>
+          <a href="#bots">Learn from Bots</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-      <h2>Playing with friends on the same Wi‑Fi</h2>
-      <ul>
-        <li>Tap <strong>Play with Friends → Local Network</strong>. All iPhones and iPads must be on the same Wi‑Fi network.</li>
-        <li>When asked, allow SG Mahjong to find devices on your local network. If you said no, turn it on in Settings → Privacy &amp; Security → Local Network.</li>
-        <li>One player taps <strong>Host LAN</strong>, the others tap <strong>Join LAN</strong> and choose the table. The host starts the game; empty seats get computer players.</li>
-        <li>If someone leaves, a computer player takes over their seat. If the host leaves, everyone returns to the menu.</li>
-        <li>When the game ends, a result screen shows everyone's final score and place. Every LAN game is saved in <strong>LAN History</strong> on the front page, with each hand.</li>
-      </ul>
+        <div>
+          <section class="faq-group" id="playing" aria-labelledby="h-playing">
+            <h2 id="h-playing"><span class="tile r" aria-hidden="true">一</span>Playing</h2>
+            <details class="q" id="discard"><summary>How do I discard?</summary><div class="a"><p>On your turn, tap a tile to lift it, then tap it again to discard. Drag tiles left or right to arrange your hand.</p></div></details>
+            <details class="q" id="claim"><summary>How do I pong, chow or kong?</summary><div class="a"><p>When someone discards a tile you can use, buttons appear above your hand. Tap the claim you want, or <strong>Pass</strong>. If the move clock runs out, a bot makes the move for you.</p></div></details>
+            <details class="q" id="rules"><summary>Where are the rules?</summary><div class="a"><p>Tap <strong>How to Play</strong> on the front page. It covers tiles, claiming, 台, limit hands, scoring, ranks and the Hall of Fame. <strong>All Tiles</strong> shows every one of the 148 tiles with its name.</p></div></details>
+            <details class="q" id="house-rules"><summary>Can I change the 台 limit or house rules?</summary><div class="a"><p>Yes. Open <strong>Settings</strong> on the front page to choose the 台 limit and other house rules before you start a game.</p></div></details>
+            <details class="q" id="money"><summary>Is money involved?</summary><div class="a"><p>No. Hands are scored in 台 and points, which have no cash value and can't be bought or cashed out. There are no ads and no in-app purchases.</p></div></details>
+            <details class="q" id="devices"><summary>Which devices does it run on?</summary><div class="a"><p>iPhone and iPad, played in landscape. It needs iOS 17 or later.</p></div></details>
+          </section>
 
-      <h2>Playing online</h2>
-      <ul>
-        <li>Tap <strong>Play with Friends → Online Internet</strong> and invite your Game Center friends. You need to be signed in to Game Center.</li>
-        <li>Online tables are friends only: you can't be matched with strangers.</li>
-        <li>Your friends get an invite from Game Center; when they accept, they join your table. Empty seats get computer players.</li>
-      </ul>
+          <section class="faq-group" id="ranks" aria-labelledby="h-ranks">
+            <h2 id="h-ranks"><span class="tile" aria-hidden="true">二</span>Ranks and career points</h2>
+            <details class="q" id="how-ranks"><summary>How do ranks work?</summary><div class="a"><p>Winning earns League Points (LP) and paying costs a little. Fill five stars to move up a rank:</p><p lang="zh">新手 Rookie → 銅 Bronze → 銀 Silver → 金 Gold → 玉 Jade → 龍 Dragon → 雀聖 Mahjong Master</p><p>Your rank follows your total LP, so losing enough LP drops you back a star or a rank. Computer players get smarter as you climb.</p></div></details>
+            <details class="q" id="online-career"><summary>Do LAN and online games count?</summary><div class="a"><p>Yes. Games against the computer, on your local network and online all add to or take from your career points and LP.</p></div></details>
+            <details class="q" id="negative"><summary>My career points are negative. Can I reset them?</summary><div class="a"><p>No. Career points only change by winning or losing hands. That keeps the leaderboard fair. You can always keep playing below zero.</p></div></details>
+            <details class="q" id="sync"><summary>My iPhone and iPad show different points</summary><div class="a"><p>Your career points and rank sync through iCloud, and the device you played on most recently wins.</p><ol><li>Sign in to the same Apple ID with iCloud turned on, on both devices.</li><li>Open the app on the device you played on last and wait a few seconds on the front page.</li><li>Then open it on the other device.</li></ol></div></details>
+          </section>
 
-      <h2>Table chat</h2>
-      <h3>How do I chat?</h3>
-      <p>At a LAN or online table, tap the chat button. Pick a quick phrase or type a short message.</p>
-      <h3>How do I stop someone's messages?</h3>
-      <p>In the chat panel, tap the mute button and choose the player. Messages with offensive words are blocked automatically. To report abuse, email us with the player's name.</p>
+          <section class="faq-group" id="friends" aria-labelledby="h-friends">
+            <h2 id="h-friends"><span class="tile g" aria-hidden="true">三</span>Playing with friends</h2>
+            <details class="q" id="lan"><summary>How do I play on the same Wi‑Fi?</summary><div class="a"><ol><li>Tap <strong>Play with Friends → Local Network</strong>. All iPhones and iPads must be on the same Wi‑Fi network.</li><li>One player taps <strong>Host LAN</strong>. The others tap <strong>Join LAN</strong> and choose the table.</li><li>The host starts the game. Empty seats get computer players.</li></ol></div></details>
+            <details class="q" id="lan-missing"><summary>I can't see the table on the local network</summary><div class="a"><ul><li>Check that every device is on the same Wi‑Fi network (not a guest network that keeps devices apart).</li><li>Allow SG Mahjong to find devices on your local network. If you said no, turn it on in <strong>Settings → Privacy &amp; Security → Local Network</strong>.</li><li>Make sure everyone has the same version of the app.</li></ul></div></details>
+            <details class="q" id="leave"><summary>What happens if someone leaves?</summary><div class="a"><p>A computer player takes over their seat. If the host leaves, everyone returns to the menu.</p></div></details>
+            <details class="q" id="history"><summary>Where are my past LAN games?</summary><div class="a"><p>When a LAN game ends, a result screen shows everyone's final score and place. Every LAN game is saved in <strong>History</strong> on the front page, with each hand. History is stored only on your device.</p></div></details>
+            <details class="q" id="online"><summary>How do I play online?</summary><div class="a"><ul><li>Tap <strong>Play with Friends → Online Internet</strong> and invite your Game Center friends. You need to be signed in to Game Center.</li><li>Your friends get an invite from Game Center. When they accept, they join your table. Empty seats get computer players.</li><li>Online tables are friends only: you can't be matched with strangers.</li></ul></div></details>
+          </section>
 
-      <h2>Profile photo</h2>
-      <p>Tap your name badge on the front page. Choose a photo from your library, use your Game Center picture, or remove it. Your photo is shown to the players at your table and to your Game Center friends.</p>
+          <section class="faq-group" id="chat" aria-labelledby="h-chat">
+            <h2 id="h-chat"><span class="tile" aria-hidden="true">四</span>Chat and profile</h2>
+            <details class="q" id="how-chat"><summary>How do I chat at the table?</summary><div class="a"><p>At a LAN or online table, tap the chat button. Pick a quick phrase or type a short message.</p></div></details>
+            <details class="q" id="mute"><summary>How do I stop someone's messages?</summary><div class="a"><p>In the chat panel, tap the mute button and choose the player. Messages with offensive words are blocked automatically. To report abuse, <a href="#contact">email us</a> with the player's name.</p></div></details>
+            <details class="q" id="photo"><summary>How do I change my name or photo?</summary><div class="a"><p>Tap your name badge on the front page. Choose a photo from your library, use your Game Center picture, or remove it.</p><p>Your SG Mahjong name and photo are shown to the players at your table and to your Game Center friends. Public screens (Leaderboard → Everyone and the Hall of Fame) show your Game Center nickname and photo instead.</p></div></details>
+          </section>
 
-      <h2>Learn from Bots</h2>
-      <p>In a game against the computer, tap <strong>Ask AI</strong> on your turn and Bot Brain says what it would play and why. To watch four bots play a whole game, tap <strong>Learn from Bots</strong> on the front page.</p>
+          <section class="faq-group" id="leaderboard" aria-labelledby="h-lb">
+            <h2 id="h-lb"><span class="tile r" aria-hidden="true">五</span>Leaderboard, Hall of Fame and big wins</h2>
+            <details class="q" id="lb-open"><summary>Where is the Leaderboard?</summary><div class="a"><p>Tap <strong>Leaderboard</strong> on the front page. It has three tabs:</p><ul><li><strong>Leaderboard</strong>: career points and rank from Game Center, for <strong>Everyone</strong> or just your <strong>Friends</strong>.</li><li><strong>Hall of Fame</strong>: big hands shared by players.</li><li><strong>My Big Wins</strong>: your own saved hands.</li></ul></div></details>
+            <details class="q" id="lb-missing"><summary>The Leaderboard doesn't load</summary><div class="a"><p>Sign in to Game Center in the Settings app on your iPhone or iPad, then open <strong>Leaderboard</strong> again. Scores can take a few minutes to appear after a game.</p></div></details>
+            <details class="q" id="friends-list"><summary>How do I see my friends' ranks?</summary><div class="a"><p>Open <strong>Leaderboard</strong> and choose <strong>Friends</strong>. Your friends are your Game Center friends; tap <strong>Add Friends in Game Center</strong> to invite people. Allow SG Mahjong to see your friends list when asked (or turn it on in <strong>Settings → Game Center → Friends List</strong>).</p></div></details>
+            <details class="q" id="stop-sharing"><summary>How do I stop sharing my rank with friends?</summary><div class="a"><p>In the app's <strong>Settings</strong>, turn off <strong>Share my rank and big wins with Game Center friends</strong>. Your card is removed, so friends no longer see it.</p></div></details>
+            <details class="q" id="big-wins"><summary>Which hands are saved as big wins?</summary><div class="a"><p>Every hand you win worth 5 台 or more, or a limit hand, is saved to <strong>Leaderboard → My Big Wins</strong>, so you can look back at the tiles, the 台 and what you collected.</p></div></details>
+            <details class="q" id="share"><summary>How do I share a hand to the Hall of Fame?</summary><div class="a"><p>Open the hand in <strong>Leaderboard → My Big Wins</strong> and tap <strong>Share to Hall of Fame</strong>. You need to be signed in to iCloud.</p></div></details>
+            <details class="q" id="remove"><summary>How do I remove my Hall of Fame post?</summary><div class="a"><p>Open it in <strong>Leaderboard → My Big Wins</strong> and tap <strong>Remove from Hall of Fame</strong>.</p></div></details>
+            <details class="q" id="report"><summary>How do I report a Hall of Fame post?</summary><div class="a"><p>Posts show only the hand and the player's Game Center nickname and photo. If something looks wrong, <a href="#contact">email us</a> with the player's name and the hand, and we'll look into it within 24 hours.</p></div></details>
+          </section>
 
-      <h2>Friends</h2>
-      <h3>How do I see my friends' ranks and big wins?</h3>
-      <p>Open <strong>Big Wins → Friends</strong>. Your friends are your Game Center friends; tap <strong>Add Friends in Game Center</strong> to invite people. Allow SG Mahjong to see your friends list when asked (or turn it on in Settings → Game Center → Friends List).</p>
-      <h3>How do I stop sharing mine?</h3>
-      <p>Turn off <strong>Settings → Friends → Share my rank and big wins</strong>. This removes your card so friends no longer see it.</p>
+          <section class="faq-group" id="bots" aria-labelledby="h-bots">
+            <h2 id="h-bots"><span class="tile g" aria-hidden="true">六</span>Learn from Bots</h2>
+            <details class="q" id="ask-ai"><summary>What is Ask AI?</summary><div class="a"><p>In a game against the computer, tap <strong>Ask AI</strong> on your turn and Bot Brain says what it would play and why.</p></div></details>
+            <details class="q" id="watch"><summary>Can I watch the bots play?</summary><div class="a"><p>Yes. Tap <strong>Learn from Bots</strong> on the front page to watch four bots play a whole game, with each move explained.</p></div></details>
+          </section>
 
-      <h2>Hall of Fame and leaderboards</h2>
-      <h3>How do I share a big win?</h3>
-      <p>Hands worth 5 台 or more are saved to <strong>Big Wins</strong>. Open one and tap <strong>Share to Hall of Fame</strong>. You need to be signed in to iCloud.</p>
-      <h3>How do I remove my post?</h3>
-      <p>Open it in <strong>Big Wins → My Big Wins</strong> and tap <strong>Remove from Hall of Fame</strong>.</p>
-      <h3>How do I report or block someone?</h3>
-      <p>In the Hall of Fame, open the post and tap <strong>Report Post</strong> or <strong>Block</strong>. Reported posts are reviewed within 24 hours. To see blocked players again, use <strong>Settings → Unblock all Hall of Fame players</strong>.</p>
-      <h3>Leaderboards don't appear</h3>
-      <p>Sign in to Game Center in the Settings app on your iPhone or iPad, then tap your rank card on the front page.</p>
+          <p id="no-results" class="no-results" hidden>No answers match that search. Try a shorter word, or <a href="#contact">email us</a>.</p>
+        </div>
+      </div>
 
-      <h2>Contact</h2>
-      <p>Email <a href="mailto:richardtang@me.com?subject=SG%20Mahjong%20support">richardtang@me.com</a> and include your iPhone or iPad model and what happened.</p>
+      <section class="contact reveal zoom" id="contact" aria-labelledby="h-contact">
+        <div>
+          <h2 id="h-contact">Still stuck? Talk to us.</h2>
+          <p>Email questions, bug reports or ideas. Include your iPhone or iPad model and what happened. We usually reply within 2 days.</p>
+        </div>
+        <a class="btn" href="mailto:richardtang@me.com?subject=SG%20Mahjong%20support">richardtang@me.com</a>
+      </section>
     </main>
 
     <footer class="bottom">
